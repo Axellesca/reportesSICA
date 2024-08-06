@@ -1,0 +1,346 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: sans-serif; */
+  font-family: monospace;
+  /* font-family: 'Poppins', sans-serif; */
+  /* font-family: Courier, sans-serif; */
+}
+
+/* body { */
+/* background-color: #575555; */
+/* background-color: #757171; */
+/* } */
+
+body {
+  --s: 50px;
+  --c: #191b22;
+  --_s: calc(2 * var(--s)) calc(2 * var(--s));
+  --_g: 35.36% 35.36% at;
+  --_c: #0000 66%, #20222a 68% 70%, #0000 72%;
+  background: radial-gradient(var(--_g) 100% 25%, var(--_c)) var(--s) var(--s) /
+      var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) var(--s) var(--s) / var(--_s),
+    radial-gradient(var(--_g) 100% 25%, var(--_c)) 0 0 / var(--_s),
+    radial-gradient(var(--_g) 0 75%, var(--_c)) 0 0 / var(--_s),
+    repeating-conic-gradient(var(--c) 0 25%, #0000 0 50%) 0 0 / var(--_s),
+    radial-gradient(var(--_c)) 0 calc(var(--s) / 2) / var(--s) var(--s) var(--c);
+  background-attachment: fixed;
+}
+
+/* BODY BLOQUES */
+/* body { */
+/* control the size */
+/* --s: 142px;  */
+/* --c1: #43b38a;
+  --c2: #1fd290;
+  --c3: #1db87f; */
+
+/* --c1: #b2b2b2;
+  --c2: #ffffff;
+  --c3: #d9d9d9; */
+
+/* --c1: #191b22;
+  --c2: #34363d;
+  --c3: #494d5a; */
+
+/* --_g: var(--c3) 0 120deg, #0000 0;
+  background: conic-gradient(from -60deg at 50% calc(100% / 3), var(--_g)), */
+/* conic-gradient(from 120deg at 50% calc(200% / 3), var(--_g)),
+    conic-gradient(
+      from 60deg at calc(200% / 3),
+      var(--c3) 60deg,
+      var(--c2) 0 120deg,
+      #0000 0
+    ), */
+/* conic-gradient(from 180deg at calc(100% / 3), var(--c1) 60deg, var(--_g)), */
+/* linear-gradient(
+      90deg,
+      var(--c1) calc(100% / 6),
+      var(--c2) 0 50%,
+      var(--c1) 0 calc(500% / 6),
+      var(--c2) 0
+    ); */
+/* background-size: calc(1.732 * var(--s)) var(--s); */
+/* } */
+
+/* Registro.php */
+.body-container {
+  /* width: 100%; */
+  /* max-width: 1000px; */
+  margin: 0 auto;
+  padding: 20px 20px;
+  background-color: #1fd290;
+  /* height: 100vh; */
+  height: 80%;
+  /* min-height: 100vh; */
+  max-height: max-content;
+}
+
+.error {
+  display: flex;
+  background-color: rgb(243, 56, 56);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  padding: 10px;
+  width: 100%;
+  /* font-size: 1.5rem; */
+}
+
+.title {
+  font-size: 2rem;
+  font-weight: bold;
+  /* padding-top: 5px; */
+  /* margin-top: 5px; */
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.container-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.form-registro {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  background-color: #f5f5f5;
+  border-radius: 5px;
+}
+
+.form-registro > input {
+  width: 50%;
+  /* width: 40rem; */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  /* border: 2px solid rgb(100, 233, 111); */
+  box-shadow: 0 0 5px 0 rgb(100, 233, 111);
+  outline: none;
+  text-align: center;
+}
+
+.form-registro > input:hover {
+  border: 1px solid #1fd290;
+}
+
+.form-registro > input:focus {
+  border: 1px solid #1fd290;
+}
+
+.form-registro > select {
+  width: 50%;
+  /* width: 40rem; */
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-shadow: 0 0 5px 0 rgb(100, 233, 111);
+  outline: none;
+  text-align: center;
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  /* justify-content: space-between; */
+  justify-content: space-around;
+  padding: 20px;
+  background-color: #f5f5f5;
+  /* border-radius: 5px; */
+}
+
+.prueba-head {
+  width: 800px;
+  /* display: flex;
+  justify-content: center;
+  align-items: center; */
+  /* background-color: red; */
+  /* height: 20rem; */
+}
+/* Bootstrap - Modif */
+
+.alert {
+  border-radius: 0;
+}
+
+.b-lg {
+  padding: 0.5rem 1rem;
+  font-size: 1.25rem;
+  border-radius: 10px;
+}
+
+.b-w {
+  width: 200px;
+  /* height: 50px; */
+}
+
+.b-xl {
+  padding: 1rem 1.5rem;
+  font-size: 1.5rem;
+  border-radius: 10px;
+}
+
+.b-xxl {
+  --bs-btn-padding-y: 0.25rem;
+  --bs-btn-padding-x: 2.5rem;
+  --bs-btn-font-size: 1.75rem;
+}
+
+.btn-pink {
+  background-color: #ffc0cb;
+  color: #fff;
+}
+
+.btn-pink:hover {
+  background-color: #ff69b4;
+  color: #fff;
+}
+
+.btn-indigo {
+  background-color: #4b0082;
+  color: #fff;
+}
+
+.btn-indigo:hover {
+  background-color: #800080;
+  color: #fff;
+}
+
+.btn-indigo:enabled:hover {
+  background-color: #800080;
+  color: #fff;
+}
+
+.btn-orange {
+  background-color: #ffa500;
+  color: #fff;
+}
+
+.btn-orange:hover {
+  background-color: #ff8c00;
+  color: #fff;
+}
+
+.btn-thistle {
+  background-color: #ffc0cb;
+}
+
+.btn-thistle:hover {
+  background-color: #ff69b4;
+}
+
+.btn-thistle:enabled:hover {
+  background-color: #ff69b4;
+}
+
+.btn-thistle:active {
+  background-color: #ff69b4;
+}
+
+.btn-green-sf {
+  background-color: #1fd290;
+}
+
+.btn-green-sf:hover {
+  background-color: #1ab87e;
+}
+
+.btn-green-sf:enabled:hover {
+  background-color: #1ab87e;
+}
+
+.bg-alert-danger {
+  background-color: #f8d7da;
+}
+
+.bg-indigo {
+  background-color: #4b0082;
+}
+
+.bg-purple {
+  background-color: #800080;
+}
+
+.bg-pink {
+  background-color: #ffc0cb;
+}
+
+.bg-green-sf {
+  background-color: #1fd290;
+}
+
+.bg-green-light {
+  background-color: #d1e7dd;
+}
+
+.bg-green-light:hover {
+  background-color: #abbeb6;
+}
+
+.bg-info-light {
+  background-color: #cff4fc;
+}
+
+.bg-info-light:hover {
+  background-color: #adcad1;
+}
+
+.bg-warning-alert {
+  background-color: #fff3cd;
+}
+
+.bg-warning-alert:hover {
+  background-color: #cec4a5;
+}
+
+.bg-thistle {
+  background-color: #ffc0cb;
+}
+
+.bg-danger-light {
+  background-color: #f8d7da;
+}
+
+.bg-peach-puff {
+  background-color: #ffdab9;
+}
+
+.alert-indigo {
+  background-color: #4b0082;
+  color: #fff;
+}
+
+.alert-purple {
+  background-color: #800080;
+  color: #fff;
+}
+
+.alert-green-sf {
+  background-color: #1fd290;
+  /* color: #fff; */
+  border-radius: 0%;
+}
+
+.alert-thistle {
+  background-color: #ffc0cb;
+}
+
+.text-indigo {
+  color: #4b0082;
+}
+
+.fs-6 {
+  font-size: 1.5rem;
+}
