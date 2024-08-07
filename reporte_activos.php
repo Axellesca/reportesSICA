@@ -47,6 +47,7 @@
               require_once 'reporte_model.php';
               $model = new ReporteModel();
               $activos = $model->getActivosSF();
+              // $activos = $model->getActivosTotal();
               foreach ($activos as $act) {
             ?>
             <tr>

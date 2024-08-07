@@ -19,6 +19,16 @@ class ReporteModel{
   //   return $organismos;
   // }
 
+  public function getActivosTotal(){
+    $query = "SELECT a_tipo,a_docu,a_nomb,a_pais,a_civil,a_domi,a_loca,a_sexo,a_postal,a_cate,a_cargo,a_naci,a_cambio_civil,a_afil,a_anios_anti,a_esca_cate,organismos_id FROM activos_local WHERE organismos_id NOT IN (99) ORDER BY organismos_id, a_nomb ASC";
+
+    $result = $this->db->query($query);
+    while ($act = $result->fetch_assoc()) {
+      $activos[] = $act;
+    }
+    return $activos;
+  }
+
   public function getActivosSF(){
     $query = "SELECT a_tipo,a_docu,a_nomb,a_pais,a_civil,a_domi,a_loca,a_sexo,a_postal,a_cate,a_cargo,a_naci,a_cambio_civil,a_afil,a_anios_anti,a_esca_cate,organismos_id FROM activos_local WHERE organismos_id IN (1,5) ORDER BY organismos_id, a_nomb ASC";
 
